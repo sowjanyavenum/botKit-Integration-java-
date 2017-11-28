@@ -14,42 +14,12 @@ import java.util.List;
 import javax.imageio.ImageIO;
 
 public class ImageFileFromGraphicsObject {
-	int width = 500;
-	int height = 300;
-	BufferedImage bufferedImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
-
+	
 	// Create a graphics which can be used to draw into the buffered image
 	List<BufferedImage> listbuffer = new ArrayList<BufferedImage>();
 
 	public Graphics2D getG2D() {
 		Graphics2D g2d = bufferedImage.createGraphics();
-		return g2d;
-	}
-
-	public List<BufferedImage> buffer() throws IOException {
-
-		listbuffer.add(ImageIO.read(new File("64299656.png")));
-		listbuffer.add(ImageIO.read(new File("64220702.png")));
-		listbuffer.add(ImageIO.read(new File("mp.png")));
-		return listbuffer;
-	}
-
-	// Constructs a BufferedImage of one of the predefined image types.
-	// fill all the image with white
-	public void whiteBlock(Graphics2D g2d) {
-		g2d.setColor(Color.white);
-		g2d.fillRect(0, 0, width, height);
-	}
-
-	// create Source block
-	public void source(Graphics2D g2d, String inputParam1) {
-
-		g2d.setColor(Color.black);
-		g2d.fillRect(10, 90, 70, 60);
-		// for label source
-		g2d.setFont(new Font("", Font.BOLD, 14));
-		g2d.setColor(Color.white);
-		g2d.drawString(inputParam1, 15, 125);
 
 		// create a line from source to EAI
 		g2d.setColor(Color.BLACK);
