@@ -21,18 +21,6 @@ public class OutboundImage {
 	// Create a graphics which can be used to draw into the buffered image
 	List<BufferedImage> listbuffer = new ArrayList<BufferedImage>();
 
-	public Graphics2D getG2D() {
-		Graphics2D g2d = bufferedImage.createGraphics();
-		return g2d;
-	}
-
-	public List<BufferedImage> buffer() throws IOException {
-
-		listbuffer.add(ImageIO.read(new File("64299656.png")));
-		listbuffer.add(ImageIO.read(new File("64220702.png")));
-		listbuffer.add(ImageIO.read(new File("mp.png")));
-		return listbuffer;
-	}
 
 	// Constructs a BufferedImage of one of the predefined image types.
 	// fill all the image with white
