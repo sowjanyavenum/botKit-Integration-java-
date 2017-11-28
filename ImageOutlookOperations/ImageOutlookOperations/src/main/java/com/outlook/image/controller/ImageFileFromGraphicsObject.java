@@ -15,10 +15,21 @@ import javax.imageio.ImageIO;
 
 public class ImageFileFromGraphicsObject {
 	
+<<<<<<< HEAD
+	// Create a graphics which can be used to draw into the buffered image
+	List<BufferedImage> listbuffer = new ArrayList<BufferedImage>();
+
+	public Graphics2D getG2D() {
+		Graphics2D g2d = bufferedImage.createGraphics();
+
+		// create a line from source to EAI
+		g2d.setColor(Color.BLACK);
+=======
 
 	// Co
 		g2d.setColor(Color.black);
 		g2d.f
+>>>>>>> master
 		Stroke stroke = new BasicStroke(3f);
 		g2d.setStroke(stroke);
 		g2d.drawLine(80, 120, 130, 120);
