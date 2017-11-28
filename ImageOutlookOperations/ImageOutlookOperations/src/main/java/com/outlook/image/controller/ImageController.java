@@ -23,15 +23,7 @@ public class ImageController {
 			@RequestParam("QMName") String QMName, @RequestParam("server") String server,
 			@RequestParam("env") String env) {
 		String res = null;
-		List<String> imageNameList = new ArrayList<String>();
-		List<String> interfaceNameList = new ArrayList<String>();
-		List<String> senderNameList = new ArrayList<String>();
-		List<String> receiverNameList = new ArrayList<String>();
-		List<String> iFlowNameList = new ArrayList<String>();
-		List<String> queueNameList = new ArrayList<String>();
-		List<String> queueManagerNameList = new ArrayList<String>();
-		List<String> serverList = new ArrayList<String>();
-		List<String> environmentNameList = new ArrayList<String>();
+
 
 		interfaceNameList.add(interfaceName);
 		senderNameList.add(senderCC);
